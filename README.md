@@ -32,12 +32,12 @@ Axios: HTTP client library.
 
 # Installation
 # Backend
-Clone the repository: git clone https://github.com/your-username/your-repo-name.git
+Clone the repository: git clone https://github.com/Alpha3web/Chatify.git
 Install dependencies: npm install
 Start the server: npm start
 
 # Frontend
-Clone the repository: git clone https://github.com/your-username/your-repo-name.git
+Clone the repository: git clone https://github.com/Alpha3web/Chatify.git
 Install dependencies: npm install
 Start the client: npm start
 
