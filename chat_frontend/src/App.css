@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.chat-window {
+    width: 66%;
+    min-width: 495px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.chat-header > * {
+    margin: 2px 5px;
+}
+
+.group-members > *{
+    margin-right: 5px;
+}
+
+.chat-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #212121;
+    border-radius: 5px 5px 0px 0px;
+    color: #fff;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    max-width: 45%;
+    min-width: 120px;
+    word-wrap: break-word;
+}
+
+.message > :first-child {
+    padding: 1px 2px;
+}
+
+.message > :last-child {
+    font-size: 12px;
+    text-align: end;
+}
+
+
+.sent {
+    background-color: #1a781d;
+    align-self: flex-end;
+
+}
+
+.received {
+    background-color: #616161;
+    align-self: flex-start;
+}
+
+.chat-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #424242;
+    border: 5px solid #212121;
+    align-items: center;
+}
+
+.chat-footer input {
+    width: 78%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.chat-footer button {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chat-footer > * {
+    margin: 5px 10px;
+}
+
+/* Home components */
+
+.container{
+    background-color: #56514c;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    align-items: center;
+    padding: 5px 3px;
+    background-color: #212121;
+}
+
+.side-panel > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side-panel > div * {
+    margin: 10px auto;
+}
+
+.chats {
+    width: 30%;
+    background-color: #424242;
+    min-width: 260px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.chats-header {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+}
+
+.chats-header > :first-child {
+    position: absolute;
+    left: 10px;
+}
+.chats-header > * {
+    margin: 5px;
+    padding: 2px;
+}
+
+.input, label {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Group */
+
+.group-form-container {
+    width: 50%;
+    margin: 20px auto;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px 2px;
+    /* position: relative; */
+}
+
+.step-1 div {
+    margin: 5px auto;
+    width: 80%;
+}
+
+.step-1 label{
+    color: black;
+    display: block;
+
+}
+.step-1 input, .step-1 textarea{
+    padding: 5px;
+    margin: 3px auto;
+    width: 100%;
+}
+
+.btn-div{
+    position: relative;
+    height: 35px;
+}
+
+.btn-next {
+    border: transparent;
+    padding: 8px 16px;
+    background-color: goldenrod;
+    color: #fff;
+    border-radius: 5px;
+    float: right;
+}
+.btn-prev {
+    border: transparent;
+    padding: 8px 16px;
+    background-color: grey;
+    color: #fff;
+    border-radius: 5px;
+    /* float: right; */
+}
+
+.step-2 label{
+    color: black;
+    margin: 20px;
+    padding-top: 10px;
+}
+
+.step-2 .btn-div, .step-3 .btn-div {
+    width: 90%;
+    margin: 15px 20px 10px;
+}
+
+.step-3 input{
+    display: none;
+}
+
+.step-3 label {
+    margin: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 5px;
+    display: inline-block;
+}
+
+.step-3 label:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.hidden {
+    display: none;
+}
